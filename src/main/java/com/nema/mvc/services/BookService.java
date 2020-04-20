@@ -9,12 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.nema.mvc.models.Book;
+import com.nema.mvc.repositories.BookRepository;
 
 @Service
 public class BookService {
-	private final BookRespository bookRepository;
+	private final BookRepository bookRepository;
 
-	public BookService(BookRespository bookRepository) {
+	public BookService(BookRepository bookRepository) {
 		this.bookRepository = bookRepository;
 
 	}
@@ -62,4 +63,4 @@ public class BookService {
  	
     }
 
-}찀
+}
